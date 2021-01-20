@@ -8,7 +8,7 @@ package com.tzachz.commentcounter.server;
  */
 public enum Period {
 
-    today(0), week(6), month(30);
+    today(0), week(6), month(30), year(365);
 
     private final int daysBack;
 
@@ -21,6 +21,6 @@ public enum Period {
     }
 
     public static Period getLongest() {
-        return month;
+        return year;
     }
 }

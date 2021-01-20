@@ -54,6 +54,7 @@ public class LeaderBoardStoreTest {
         assertThat(store.isLoaded("today"), is(false));
         assertThat(store.isLoaded("week"), is(false));
         assertThat(store.isLoaded("month"), is(false));
+        assertThat(store.isLoaded("year"), is(false));
     }
 
     @Test
@@ -62,6 +63,7 @@ public class LeaderBoardStoreTest {
         assertThat(store.isLoaded("today"), is(true));
         assertThat(store.isLoaded("week"), is(true));
         assertThat(store.isLoaded("month"), is(true));
+        assertThat(store.isLoaded("year"), is(true));
     }
 
     @Test
